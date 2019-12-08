@@ -1,0 +1,14 @@
+.main-bookmark-form-container {
+  background-color: #F2F2F2;
+  padding: 10px 10px 10px 10px;
+  .bookmark-form-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+:host ::ng-deep .mat-form-field-infix {
+  background-color:#FFFFFF;
+  margin-top: 10px;
+}
+  

@@ -1,0 +1,30 @@
+<div class="main-bookmark-form-container">
+    <header>
+        <h3>Add Bookmarks</h3>
+    </header>
+    <form [formGroup]="bookmarkFormGroup" (ngSubmit)="onSubmit(bookmarkFormGroup)">
+        <div class="bookmark-form-container">
+            <mat-form-field>
+                <input matInput placeholder="Name" formControlName="name">
+                <mat-error [hidden]="(name && name.valid)">Name is required</mat-error>
+            </mat-form-field>
+
+            <mat-form-field>
+                <input matInput placeholder="Url" formControlName="url">
+                <mat-error [hidden]="(url && url.valid)">URL is required</mat-error>
+            </mat-form-field>
+
+            <mat-form-field>
+                <mat-select placeholder="Group" formControlName="group">
+                    <mat-option value="work">Work</mat-option>
+                    <mat-option value="leaisure">Leisure</mat-option>
+                    <mat-option value="person">Personal</mat-option>
+                </mat-select>
+                <mat-error [hidden]="(group && group.valid)">Group is required</mat-error>
+            </mat-form-field>
+            <div>
+                <button mat-raised-button color="primary" type="submit" class="button">Add</button>
+            </div>
+        </div>
+    </form>
+</div>

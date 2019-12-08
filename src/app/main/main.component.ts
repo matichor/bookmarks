@@ -21,11 +21,5 @@ export class MainComponent implements OnInit {
 
   ngOnInit() {
   }
-
-  addBookmark() {
-    this.store.dispatch(new BookmarkActions.AddBookmark({
-      name: 'MMMMM', url: 'NNNNNN', bookmarkGroup: 'person'
-    }));
-  }
 }
 

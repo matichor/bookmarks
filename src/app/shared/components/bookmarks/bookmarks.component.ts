@@ -53,6 +53,7 @@ export class BookmarksComponent implements OnInit {
 
   @Input('bookmarks')
   set bookmarks(bookmarks: Bookmark[]) {
+    this.setOrginalIndex(bookmarks);
     this._bookmarks = this.addGroups(bookmarks, this.groupByColumns);
   }
   get bookmarks() {
@@ -94,6 +95,12 @@ export class BookmarksComponent implements OnInit {
     return subGroups;
   }
 
+  setOrginalIndex(data: any[]) {
+    data.forEach((item, index) => {
+      item.orginId = index;
+    });
+  }
+
   uniqueBy(a, key) {
     const seen = {};
     return a.filter((item) => {
@@ -111,6 +118,13 @@ export class BookmarksComponent implements OnInit {
   }
 
   removeBookmark(index: number) {
-    this.store.dispatch(new BookmarkActions.RemoveBookmark(index - this.groupCount));
+    let bookmark: any;
+
+    for (const [indexRow, item] of this.bookmarks.entries()) {
+      if (index === indexRow) {
+        bookmark = item;
+      }
+    }
+    this.store.dispatch(new BookmarkActions.RemoveBookmark(bookmark.orginId));
   }
 }

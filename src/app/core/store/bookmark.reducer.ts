@@ -4,16 +4,16 @@ import * as BookmarkActions from '../store/bookmark.action';
 
 const initialState: Bookmark[] = [
     {
-        name: 'Works1',
+        name: 'Sample_1',
         url: 'http://google.com',
         bookmarkGroup: 'person'
     }, {
-        name: 'Works2',
-        url: 'http://google.com',
-        bookmarkGroup: 'person'
+        name: 'Sample_2',
+        url: 'http://yahoo.com',
+        bookmarkGroup: 'work'
     }, {
-        name: 'Works3',
-        url: 'http://google.com',
+        name: 'Sample_3',
+        url: 'https://www.bing.com',
         bookmarkGroup: 'leaisure'
     }
 ];

@@ -23,6 +23,9 @@ have been developed with the use of library such as ngrx or angular material.
 
 ![Alt text](https://raw.githubusercontent.com/matichor/bookmarks/master/bookmark_form_validation.PNG "Bookmark form validation")
 
+
+![Alt text](https://github.com/matichor/bookmarks/blob/master/bookmark_form_select_gr.PNG?raw=true "Bookmark form selecting group")
+
 ## How to run the application
 
 Once downloaded repository. Just run  following  commands:

@@ -19,6 +19,8 @@ have been developed with the use of library such as ngrx or angular material.
 
 ![Alt text](https://github.com/matichor/bookmarks/blob/master/bookmark_view_sample.PNG?raw=true "Bookmarks view")
 
+![Alt text](https://raw.githubusercontent.com/matichor/bookmarks/master/bookmark_view_sample_2.PNG "Bookmarks view")
+
 ![Alt text](https://raw.githubusercontent.com/matichor/bookmarks/master/bookmark_form.PNG "Bookmark form")
 
 ![Alt text](https://raw.githubusercontent.com/matichor/bookmarks/master/bookmark_form_validation.PNG "Bookmark form validation")

@@ -13,3 +13,7 @@ Bookmark manager is arranged into two modules: core, main and shared.
 - Main module - It shall manage whole bookmarks view (forms and list)
 
 - Core module - Includes ngrx store functionality
+
+## Screnshoots
+
+![Alt text](https://raw.githubusercontent.com/matichor/bookmarks/master/bookmark_form_validation.PNG "Bookmark form validation")
